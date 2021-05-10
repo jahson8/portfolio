@@ -82,7 +82,8 @@
 .demo {
   background-color: $color-primary;
   font-weight: $font-weight--bold;
-  &:hover {
+  &:hover,
+  &:focus {
     @extend %hover;
     color: $color-primary;
     border: 2px solid $color-primary;
@@ -92,9 +93,16 @@
 .repo {
   background-color: $color-accent;
   font-weight: $font-weight--bold;
-  &:hover {
+  &:hover,
+  &:focus {
     @extend %hover;
     color: $color-accent;
     border: 2px solid $color-accent;
   }
+}
+
+.feature {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 2.5em;
 }

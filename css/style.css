@@ -352,6 +352,9 @@ a {
   color: inherit;
   text-decoration: none; }
 
+p {
+  font-size: 1.1rem; }
+
 /* General Class Styles*/
 .btn {
   border-radius: 5px;
@@ -407,6 +410,10 @@ a {
   .nav-links a {
     display: block;
     padding: 0.8em; }
+    .nav-links a:hover {
+      text-decoration: underline; }
+    .nav-links a:focus {
+      outline: 3px solid white; }
 .nav-btn {
   background-color: transparent;
   padding: 0.6em;
@@ -414,10 +421,16 @@ a {
   border-color: #fff;
   color: #fff;
   text-transform: uppercase; }
+.nav-btn:focus, .nav-logo:focus {
+  outline: 3px solid white; }
 .nav-show {
   display: block;
   height: auto; }
 @media (min-width: 48em) {
+  .nav-bar .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
   .nav-btn {
     display: none; }
   .nav-wrapper {
@@ -430,11 +443,6 @@ a {
     padding: 0; }
   .nav-links > * + * {
     margin-left: 1em; } }
-@media (min-width: 64em) {
-  .nav-bar .container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; } }
 
 /* Welcome Section styles
      ========================================================================== */
@@ -509,23 +517,28 @@ a {
 .btn-container > * + * {
   margin-left: 1em; }
 
-.demo:hover, .repo:hover {
+.demo:hover, .demo:focus, .repo:hover, .repo:focus {
   background-color: white;
   transition: all 0.3s linear; }
 
 .demo {
   background-color: #2a1c82;
   font-weight: 700; }
-  .demo:hover {
+  .demo:hover, .demo:focus {
     color: #2a1c82;
     border: 2px solid #2a1c82; }
 
 .repo {
   background-color: #75821c;
   font-weight: 700; }
-  .repo:hover {
+  .repo:hover, .repo:focus {
     color: #75821c;
     border: 2px solid #75821c; }
+
+.feature {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 2.5em; }
 
 /* Contact Section  Styles
      ========================================================================== */
@@ -545,12 +558,10 @@ a {
     border-radius: 5px; }
     .contact-btn + .contact-btn {
       margin-left: 1em; }
-    .contact-btn:hover {
+    .contact-btn:hover, .contact-btn:focus {
       background-color: white;
       color: #232323;
       font-weight: 700; }
-    .contact-btn:focus {
-      outline: 3px solid; }
 
 /* Footer  Styles
      ========================================================================== */

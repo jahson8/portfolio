@@ -20,14 +20,11 @@
       margin-left: 1em;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: white;
       color: #232323;
       font-weight: $font-weight--bold;
-    }
-
-    &:focus {
-      outline: 3px solid;
     }
   }
 }
