@@ -1,0 +1,42 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+// Font Stacks
+$font-family--secondary: "Roboto Slab", serif;
+$font-family--primary: "Exo 2", sans-serif;
+$font-family--logo: "Asset", cursive;
+
+// Font Weights
+$font-weight--normal: 400;
+$font-weight--bold: 700;
+
+// Descriptive Base Colors
+
+$whiteSmoke: #edeff0;
+$black: #0b0b0b;
+$gray: #a7a7a7;
+
+$picotee-blue: #2a1c82;
+$color-primary: $picotee-blue;
+$color-accent: #75821c;
+
+// Line-height
+$line-height: 1.5;
+
+// Box-shadow
+$box-shadow: 0 2px 0 rgba(0, 0, 0, 6%);
+
+// Border
+$border: 2px solid $gray;
+
+// Border-radius
+$br: 5px;
+
+// outline
+$outline: 3px solid black;
+
+// Breakpoints
+
+$med: 48em; //768px
+$large: 64em; //1024px

@@ -1,0 +1,66 @@
+/* Base Styles
+     ========================================================================== */
+
+/**
+   *
+   */
+
+/* Set Box-Sizing*/
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* General Styles*/
+html,
+body {
+  font-size: 1em;
+  line-height: $line-height;
+  hyphens: auto;
+  font-family: $font-family--primary;
+  background-color: $whiteSmoke;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $font-family--secondary;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  margin-top: 1.5em;
+  font-size: 2rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* General Class Styles*/
+.btn {
+  border-radius: 5px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}

@@ -1,0 +1,100 @@
+/* Project Section  styles
+     ========================================================================== */
+
+/**
+   *
+   */
+
+#projects {
+  padding-bottom: 2em;
+}
+
+.project {
+  &-list,
+  &-tile {
+    display: flex;
+  }
+  &-list {
+    flex-wrap: wrap;
+  }
+
+  &-tile {
+    flex-direction: column;
+    width: 100%;
+    padding: 0.6em;
+    border-radius: 5px;
+    box-shadow: $box-shadow;
+    background-color: #fff;
+    margin-bottom: 1em;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    .img-container {
+      overflow: hidden;
+    }
+  }
+
+  &-description {
+    margin-bottom: 2.3em;
+  }
+
+  @media (min-width: 600px) {
+    &-list {
+      --gap: 1em;
+      margin: calc(var(--gap) / -2);
+    }
+
+    &-tile {
+      margin: calc(var(--gap) / 2);
+      width: calc(50% - var(--gap));
+    }
+  }
+
+  @media (min-width: $large) {
+    &-tile {
+      width: calc(33% - var(--gap));
+    }
+  }
+}
+
+.btn-container {
+  display: flex;
+  margin-top: auto;
+}
+
+.btn-container > * {
+  flex-basis: 100%;
+  color: white;
+  text-align: center;
+}
+
+.btn-container > * + * {
+  margin-left: 1em;
+}
+
+%hover {
+  background-color: white;
+  transition: all 0.3s linear;
+}
+.demo {
+  background-color: $color-primary;
+  font-weight: $font-weight--bold;
+  &:hover {
+    @extend %hover;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+  }
+}
+
+.repo {
+  background-color: $color-accent;
+  font-weight: $font-weight--bold;
+  &:hover {
+    @extend %hover;
+    color: $color-accent;
+    border: 2px solid $color-accent;
+  }
+}

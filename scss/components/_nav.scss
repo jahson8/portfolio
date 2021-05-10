@@ -1,0 +1,93 @@
+/* Navigation styles
+     ========================================================================== */
+
+/**
+   *
+   */
+
+.nav {
+  &-bar {
+    background-color: $color-primary;
+    color: white;
+    padding: 0.7em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 2px 6px -2px #000000;
+    z-index: 10;
+
+    & .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-logo {
+    font-family: $font-family--logo;
+    font-size: 1.8rem;
+  }
+
+  &-links {
+    display: none;
+    text-align: center;
+    font-size: 1.3rem;
+    transition: height 0.7s ease;
+    a {
+      display: block;
+      padding: 0.8em;
+    }
+  }
+
+  &-btn {
+    background-color: transparent;
+    padding: 0.6em;
+    cursor: pointer;
+    border-color: #fff;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  &-show {
+    display: block;
+    height: auto;
+  }
+
+  @media (min-width: $med) {
+    &-btn {
+      display: none;
+    }
+
+    &-wrapper {
+      align-self: center;
+    }
+
+    &-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 0.5em;
+    }
+
+    &-links a {
+      padding: 0;
+    }
+
+    &-links > * + * {
+      margin-left: 1em;
+    }
+  }
+
+  @media (min-width: $large) {
+    &-bar .container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

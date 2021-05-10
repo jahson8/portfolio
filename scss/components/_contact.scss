@@ -1,0 +1,33 @@
+/* Contact Section  Styles
+     ========================================================================== */
+
+/**
+   *
+   */
+
+.contact {
+  background-color: #232323;
+  color: white;
+  text-align: center;
+  padding: 2em 1.5em;
+  &-btn {
+    display: inline-block;
+    border: 2px solid;
+    padding: 0.7em;
+    transition: background-color 0.4s linear, color 0.4s linear;
+    border-radius: $br;
+    & + & {
+      margin-left: 1em;
+    }
+
+    &:hover {
+      background-color: white;
+      color: #232323;
+      font-weight: $font-weight--bold;
+    }
+
+    &:focus {
+      outline: 3px solid;
+    }
+  }
+}

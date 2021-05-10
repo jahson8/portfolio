@@ -1,0 +1,15 @@
+/* Footer  Styles
+     ========================================================================== */
+
+/**
+   *
+   */
+
+footer {
+  &,
+  & ul {
+    display: flex;
+  }
+  background-color: $color-primary;
+  color: #fff;
+}

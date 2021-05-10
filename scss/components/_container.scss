@@ -1,0 +1,19 @@
+/* Generic Container styles
+     ========================================================================== */
+
+/**
+   *
+   */
+.container {
+  padding: 0 1em;
+
+  @media (min-width: $med) {
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $large) {
+    max-width: 1200px;
+  }
+}
