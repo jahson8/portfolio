@@ -496,14 +496,13 @@ p {
   margin-bottom: 2.3em; }
 @media (min-width: 600px) {
   .project-list {
-    --gap: 1em;
-    margin: calc(var(--gap) / -2); }
+    margin: calc(1em / -2); }
   .project-tile {
-    margin: calc(var(--gap) / 2);
-    width: calc(50% - var(--gap)); } }
+    margin: calc(1em / 2);
+    width: calc(50% - 1em); } }
 @media (min-width: 64em) {
   .project-tile {
-    width: calc(33% - var(--gap)); } }
+    width: calc(33% - 1em); } }
 
 .btn-container {
   display: flex;

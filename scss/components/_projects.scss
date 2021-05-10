@@ -43,19 +43,18 @@
 
   @media (min-width: 600px) {
     &-list {
-      --gap: 1em;
-      margin: calc(var(--gap) / -2);
+      margin: calc(1em / -2);
     }
 
     &-tile {
-      margin: calc(var(--gap) / 2);
-      width: calc(50% - var(--gap));
+      margin: calc(1em / 2);
+      width: calc(50% - 1em);
     }
   }
 
   @media (min-width: $large) {
     &-tile {
-      width: calc(33% - var(--gap));
+      width: calc(33% - 1em);
     }
   }
 }
